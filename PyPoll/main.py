@@ -3,7 +3,7 @@ import os
 import csv
 
 # Path to election data CSV file
-election_data_csv = os.path.join("PyPoll", "Resources", "election_data.csv")
+election_data_csv = os.path.join("Resources", "election_data.csv")
 
 # Initialize variables
 total_votes = 0
@@ -50,7 +50,7 @@ print(f"Winner: {winner}")
 print("-------------------------")
 
 # Write results to text file
-output_file = os.path.join("PyPoll", "Analysis", "election_results.txt")
+output_file = os.path.join("Analysis", "election_results.txt")
 with open(output_file, "w") as txtfile:
     txtfile.write("Election Results\n")
     txtfile.write("-------------------------\n")
