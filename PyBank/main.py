@@ -2,7 +2,7 @@ import os
 import csv
 
 # Path to budget data CSV file
-budget_data_csv = os.path.join('PyBank', 'Resources', 'budget_data.csv')
+budget_data_csv = os.path.join('Resources', 'budget_data.csv')
 
 # Initialize variables
 total_months = 0
@@ -59,7 +59,7 @@ print(f"Greatest Increase in Profits: {increase_month} (${greatest_increase})")
 print(f"Greatest Decrease in Profits: {decrease_month} (${greatest_decrease})")
 
 # Write financial analysis to a text file
-output_file = os.path.join('PyBank', 'Analysis', 'financial_analysis.txt')
+output_file = os.path.join('Analysis', 'financial_analysis.txt')
 with open(output_file, 'w') as txtfile:
     txtfile.write("Financial Analysis\n")
     txtfile.write("----------------------------\n")
